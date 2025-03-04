@@ -15,12 +15,56 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 ```
 
 
+
+
 ## Windows
-```
+
+1. Install
+```shell
 choco install starship
 ```
 
 
+2. Find path for profile file
+```shell
+$PROFILE
+```
+
+**If the file does not exists then create it**:
+
+### 1. Erstellen der Datei  
+Öffne PowerShell und gib Folgendes ein:  
+```powershell
+New-Item -Path $PROFILE -ItemType File -Force
+```
+Das legt die Datei an, falls sie nicht existiert.
+
+### 2. Bearbeiten der Datei  
+Jetzt kannst du sie mit Notepad öffnen:  
+```powershell
+notepad $PROFILE
+```
+Falls du **Visual Studio Code** nutzt, geht auch:  
+```powershell
+code $PROFILE
+```
+
+### 3. Den Starship-Befehl hinzufügen  
+Füge diese Zeile ans Ende der Datei:  
+```powershell
+Invoke-Expression (&starship init powershell)
+```
+Speichern und schließen.
+
+### 4. PowerShell neu starten  
+Damit die Änderungen greifen, schließe PowerShell und öffne sie neu.  
+Falls es trotzdem nicht klappt, prüfe, ob PowerShell-Skripte ausgeführt werden dürfen:  
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+Falls gefragt wird, mit **"Ja" (Y)** bestätigen.  
+
+Jetzt sollte Starship beim Start von PowerShell automatisch geladen werden. 🚀
 
 
 
