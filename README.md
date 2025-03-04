@@ -17,6 +17,7 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 
 ## Windows
 ```
+choco install starship
 ```
 
 
