@@ -92,6 +92,40 @@ ___
 # Config
 - https://starship.rs/config/
 
+
+## Create config.toml
+
+<br><br>
+
+### Windows
+
+<br><br>
+
+#### Powershell
+
+Add to your profile file:
+```shell
+notepad $PROFILE
+```
+
+Create your `starship.toml` at your wished location and then add this:
+```
+$ENV:STARSHIP_CONFIG = "C:\Users\yourusernamehere\.config\starship.toml"
+```
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+
+
 ## Design #1 **HOT**
 
 <details><summary>Click to expand..</summary>
