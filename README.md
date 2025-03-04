@@ -89,8 +89,13 @@ ___
 <br><br>
 
 
-## Design #1
-- https://i.redd.it/u86x4e91gju91.png
+# Config
+- https://starship.rs/config/
+
+## Design #1 **HOT**
+
+<details><summary>Click to expand..</summary>
+
 ```toml
 # Warning: This config does not include keys that have an unset value
 
@@ -931,3 +936,4 @@ detect_folders = []
 [custom]
 ```
 
+</details>
