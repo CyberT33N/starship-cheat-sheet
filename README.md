@@ -19,7 +19,7 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 
 ## Windows
 
-1. Install
+1. Install with powershell as admin
 ```shell
 choco install starship
 ```
