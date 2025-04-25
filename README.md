@@ -66,7 +66,23 @@ Falls gefragt wird, mit **"Ja" (Y)** bestätigen.
 
 Jetzt sollte Starship beim Start von PowerShell automatisch geladen werden. 🚀
 
+Example:
+```
+Invoke-Expression (&starship init powershell)
+$ENV:STARSHIP_CONFIG = "C:\Users\denni\.config\starship.toml"
 
+# Git Tools Path
+$env:Path += ";C:\Projects\utils\git-tools\bin"
+
+#GO
+$env:Path += ";C:\Go\bin"
+
+# Default editor
+$ENV:EDITOR = "C:\Users\denni\AppData\Local\Programs\cursor\Cursor.exe"
+
+# RooCode
+# if ($env:TERM_PROGRAM -eq "vscode") { . "$(code --locate-shell-integration-path pwsh)" }
+```
 
 
 
