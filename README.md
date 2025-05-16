@@ -68,8 +68,10 @@ Jetzt sollte Starship beim Start von PowerShell automatisch geladen werden. 🚀
 
 Example:
 ```
-Invoke-Expression (&starship init powershell)
-$ENV:STARSHIP_CONFIG = "C:\Users\denni\.config\starship.toml"
+# Starship Prompt
+$env:STARSHIP_CONFIG = "C:\Users\denni\.config\starship.toml"
+$env:Path += ";C:\Program Files\starship\bin"
+Invoke-Expression (& "C:\Program Files\starship\bin\starship.exe" init powershell)
 
 # Git Tools Path
 $env:Path += ";C:\Projects\utils\git-tools\bin"
