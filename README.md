@@ -84,6 +84,12 @@ $ENV:EDITOR = "C:\Users\denni\AppData\Local\Programs\cursor\Cursor.exe"
 
 # RooCode
 # if ($env:TERM_PROGRAM -eq "vscode") { . "$(code --locate-shell-integration-path pwsh)" }
+
+# Git Installation Path
+$env:Path += ";C:\Program Files\Git\cmd"
+
+# Git Installation Path
+$env:Path += ";C:\ProgramData\chocolatey\bin"
 ```
 
 
