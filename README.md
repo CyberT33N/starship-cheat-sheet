@@ -70,7 +70,7 @@ Example:
 ```
 # Starship Prompt
 $env:STARSHIP_CONFIG = "C:\Users\denni\.config\starship.toml"
-$env:Path += ";C:\Program Files\starship\bin"
+# $env:Path += ";C:\Program Files\starship\bin"
 Invoke-Expression (& "C:\Program Files\starship\bin\starship.exe" init powershell)
 
 # Git Tools Path
